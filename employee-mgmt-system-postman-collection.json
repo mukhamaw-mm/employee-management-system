@@ -1,0 +1,554 @@
+{
+	"info": {
+		"_postman_id": "6ea9c774-d1c4-4426-9baa-0f68d4c70830",
+		"name": "employee",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Add Role(Admin)",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"roleName\":\"Normal User\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8082/employeeMgmtService/addRole?name=Admin",
+					"host": [
+						"localhost"
+					],
+					"port": "8082",
+					"path": [
+						"employeeMgmtService",
+						"addRole"
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "Admin"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Add Role(Normal User)",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"roleName\":\"Normal User\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8082/employeeMgmtService/addRole?name=Normal User",
+					"host": [
+						"localhost"
+					],
+					"port": "8082",
+					"path": [
+						"employeeMgmtService",
+						"addRole"
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "Normal User"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get All Role",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8082/employeeMgmtService/getAllRole",
+					"host": [
+						"localhost"
+					],
+					"port": "8082",
+					"path": [
+						"employeeMgmtService",
+						"getAllRole"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Add Position(Senior)",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "localhost:8082/employeeMgmtService/addPosition?name=Senior",
+					"host": [
+						"localhost"
+					],
+					"port": "8082",
+					"path": [
+						"employeeMgmtService",
+						"addPosition"
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "Senior"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Add Position(Junior)",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "localhost:8082/employeeMgmtService/addPosition?name=Junior",
+					"host": [
+						"localhost"
+					],
+					"port": "8082",
+					"path": [
+						"employeeMgmtService",
+						"addPosition"
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "Junior"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get All Position",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8082/employeeMgmtService/getAllPosition",
+					"host": [
+						"localhost"
+					],
+					"port": "8082",
+					"path": [
+						"employeeMgmtService",
+						"getAllPosition"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Add Department(Hr)",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "localhost:8082/employeeMgmtService/addDepartment?name=Hr",
+					"host": [
+						"localhost"
+					],
+					"port": "8082",
+					"path": [
+						"employeeMgmtService",
+						"addDepartment"
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "Hr"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Add Department(IT)",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "localhost:8082/employeeMgmtService/addDepartment?name=IT",
+					"host": [
+						"localhost"
+					],
+					"port": "8082",
+					"path": [
+						"employeeMgmtService",
+						"addDepartment"
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "IT"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get All Department",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8082/employeeMgmtService/getAllDepartment",
+					"host": [
+						"localhost"
+					],
+					"port": "8082",
+					"path": [
+						"employeeMgmtService",
+						"getAllDepartment"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Add Employee",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\":\"Mu Kham\",\r\n    \"address\":\"taunggyi\",\r\n    \"phoneNo\":\"09768482680\",\r\n    \"email\":\"mk@gmail.com\",\r\n    \"password\":\"mg@123\",\r\n    \"totalLeaveBalance\":10,\r\n    \"positionId\":1,\r\n    \"deptId\":1,\r\n    \"roleId\":1\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8082/employeeMgmtService/addEmployee",
+					"host": [
+						"localhost"
+					],
+					"port": "8082",
+					"path": [
+						"employeeMgmtService",
+						"addEmployee"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Change Password",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "localhost:8082/employeeMgmtService/changePassword?empId=EMP_10001&currentPwd=aw@123&newPwd=awlay@123",
+					"host": [
+						"localhost"
+					],
+					"port": "8082",
+					"path": [
+						"employeeMgmtService",
+						"changePassword"
+					],
+					"query": [
+						{
+							"key": "empId",
+							"value": "EMP_10001"
+						},
+						{
+							"key": "currentPwd",
+							"value": "aw@123"
+						},
+						{
+							"key": "newPwd",
+							"value": "awlay@123"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Employee",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"empId\":\"EMP_10001\",\r\n    \"name\":\"Mu Kham Aw\",\r\n    \"address\":\"taunggyi\",\r\n    \"phoneNo\":\"09768482680\",\r\n    \"email\":\"mk@gmail.com\",    \r\n    \"positionId\":1,\r\n    \"deptId\":1,\r\n    \"roleId\":1\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8082/employeeMgmtService/updateEmployee",
+					"host": [
+						"localhost"
+					],
+					"port": "8082",
+					"path": [
+						"employeeMgmtService",
+						"updateEmployee"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Search All",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8082/employeeMgmtService/searchAll",
+					"host": [
+						"localhost"
+					],
+					"port": "8082",
+					"path": [
+						"employeeMgmtService",
+						"searchAll"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Search By Name",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8082/employeeMgmtService/searchByName?name=Mu Kham",
+					"host": [
+						"localhost"
+					],
+					"port": "8082",
+					"path": [
+						"employeeMgmtService",
+						"searchByName"
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "Mu Kham"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Search By Employee Id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8082/employeeMgmtService/searchByEmpId?empId=EMP_10001",
+					"host": [
+						"localhost"
+					],
+					"port": "8082",
+					"path": [
+						"employeeMgmtService",
+						"searchByEmpId"
+					],
+					"query": [
+						{
+							"key": "empId",
+							"value": "EMP_10001"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Search By Department",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8082/employeeMgmtService/searchByDepartment?deptId=1",
+					"host": [
+						"localhost"
+					],
+					"port": "8082",
+					"path": [
+						"employeeMgmtService",
+						"searchByDepartment"
+					],
+					"query": [
+						{
+							"key": "deptId",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Search By Email",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8082/employeeMgmtService/searchByEmail?email=mk@gmail.com",
+					"host": [
+						"localhost"
+					],
+					"port": "8082",
+					"path": [
+						"employeeMgmtService",
+						"searchByEmail"
+					],
+					"query": [
+						{
+							"key": "email",
+							"value": "mk@gmail.com"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Add Leave Balance",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "localhost:8082/employeeMgmtService/addLeaveBalance?empId=EMP_10001&leaveCount=3",
+					"host": [
+						"localhost"
+					],
+					"port": "8082",
+					"path": [
+						"employeeMgmtService",
+						"addLeaveBalance"
+					],
+					"query": [
+						{
+							"key": "empId",
+							"value": "EMP_10001"
+						},
+						{
+							"key": "leaveCount",
+							"value": "3"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Deduct Leave Balance",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "localhost:8082/employeeMgmtService/deductLeaveBalance?empId=EMP_10001&leaveCount=1",
+					"host": [
+						"localhost"
+					],
+					"port": "8082",
+					"path": [
+						"employeeMgmtService",
+						"deductLeaveBalance"
+					],
+					"query": [
+						{
+							"key": "empId",
+							"value": "EMP_10001"
+						},
+						{
+							"key": "leaveCount",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Employee",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "localhost:8082/employeeMgmtService/deleteByEmpId?empId=EMP_10001",
+					"host": [
+						"localhost"
+					],
+					"port": "8082",
+					"path": [
+						"employeeMgmtService",
+						"deleteByEmpId"
+					],
+					"query": [
+						{
+							"key": "empId",
+							"value": "EMP_10001"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "localhost:8082/employeeMgmtService/login?empId=EMP_10001&password=aw@123",
+					"host": [
+						"localhost"
+					],
+					"port": "8082",
+					"path": [
+						"employeeMgmtService",
+						"login"
+					],
+					"query": [
+						{
+							"key": "empId",
+							"value": "EMP_10001"
+						},
+						{
+							"key": "password",
+							"value": "aw@123"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
