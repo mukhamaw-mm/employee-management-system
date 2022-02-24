@@ -18,7 +18,9 @@ External Tools - Lombok
 
 * You can download postman exported file 'employee-mgmt-system-postman-collection.json' under project and import in your postman for testing purpose.
 
-* You can run my application in your local with your IDE or you can run my application in docker(pls check out dockerfile).
+* If you want to run in your local IDE, you need to change your database url in application.properties.
+
+* You can run my application in docker(just type docker-compose up or docker-compose -d  (to hide logs) for starting application and docker-compose down for stopping application).
 
 * After importing my postman collection,
 
