@@ -70,8 +70,6 @@ public class ConfigServiceImpl implements ConfigService {
 
         Position position = new Position();
         position.setPositionName(name);
-
-
         logger.info("Before saving into db: {}", position);
 
         positionRepository.save(position);

@@ -18,9 +18,13 @@ External Tools - Lombok
 
 * You can download postman exported file 'employee-mgmt-system-postman-collection.json' under project and import in your postman for testing purpose.
 
-* If you want to run in your local IDE, you need to change your database url in application.properties.
+* You can run my application in your local with your IDE, but you need to change your database url in application.properties file (eg. localhost behind '//' instead of postgresqldb).
 
-* You can run my application in docker(just type docker-compose up or docker-compose -d  (to hide logs) for starting application and docker-compose down for stopping application).
+* If you want to run application in docker, 
+    * Please make sure your database url in application.properties file should be postgresqldb behind '//' instead of localhost or others url.
+    * Go to project directory with console (go with command prompt or terminal).
+    * Generate jar file by typing `mvn clean install -DskipTests=true` in your console. (-DskipTests is to avoid error for db url when generating jar file)
+    * Type docker-compose up or docker-compose up -d (to hide logs) to start application and docker-compose down to stop application.
 
 * After importing my postman collection,
 
